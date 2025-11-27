@@ -1,0 +1,15 @@
+{
+  "/contact/page": "app/contact/page.js",
+  "/documentation/access-control/page": "app/documentation/access-control/page.js",
+  "/documentation/agent-config/page": "app/documentation/agent-config/page.js",
+  "/documentation/first-workflow/page": "app/documentation/first-workflow/page.js",
+  "/documentation/integration-setup/page": "app/documentation/integration-setup/page.js",
+  "/documentation/page": "app/documentation/page.js",
+  "/documentation/quick-start/page": "app/documentation/quick-start/page.js",
+  "/documentation/triggers/page": "app/documentation/triggers/page.js",
+  "/documentation/workflow-builder/page": "app/documentation/workflow-builder/page.js",
+  "/page": "app/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/start/page": "app/start/page.js",
+  "/use-cases/page": "app/use-cases/page.js"
+}
