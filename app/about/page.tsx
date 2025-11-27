@@ -41,7 +41,6 @@ export default function AboutPage() {
 
   const caseStudy = {
     company: t.about.caseStudyCompany,
-    industry: t.about.caseStudyIndustry,
     metrics: [
       { label: t.about.metric1, value: t.about.metric1Value },
       { label: t.about.metric2, value: t.about.metric2Value },
