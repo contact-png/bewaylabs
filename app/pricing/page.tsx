@@ -1,8 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
-import { ArrowRight } from 'lucide-react'
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
+import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { PricingTable } from "@/components/pricing-table"
 import { ROICalculator } from "@/components/roi-calculator"
@@ -43,8 +41,6 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Navbar />
-
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
@@ -71,6 +67,7 @@ export default function PricingPage() {
       {/* ROI Calculator */}
       <ROICalculator />
 
+      {/* Add-ons Section */}
       <section className="py-32 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
 
@@ -85,7 +82,9 @@ export default function PricingPage() {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
               <span className="gradient-text">{t.pricing.addOnsTitle}</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t.pricing.addOnsSubtitle}</p>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              {t.pricing.addOnsSubtitle}
+            </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -99,26 +98,26 @@ export default function PricingPage() {
                 className="group relative"
               >
                 <div className="relative rounded-3xl border border-border/50 bg-gradient-to-br from-background/80 via-secondary/10 to-background/60 backdrop-blur-sm p-10 space-y-6 h-full transition-all duration-500 hover:border-accent-signal/30 hover:shadow-2xl hover:shadow-accent-signal/5 hover:-translate-y-1">
-                  {/* Badge */}
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-neon/10 border border-accent-neon/20">
                     <div className="w-1.5 h-1.5 rounded-full bg-accent-neon animate-pulse" />
                     <span className="text-xs font-medium text-accent-neon">{addon.badge}</span>
                   </div>
 
-                  {/* Content */}
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-semibold text-foreground tracking-tight">{addon.title}</h3>
-                    <p className="text-base text-muted-foreground leading-relaxed">{addon.description}</p>
+                    <h3 className="text-2xl font-semibold text-foreground tracking-tight">
+                      {addon.title}
+                    </h3>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      {addon.description}
+                    </p>
                   </div>
 
-                  {/* Subtle accent line */}
                   <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent-signal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
               </motion.div>
             ))}
           </div>
 
-          {/* Contact CTA below add-ons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -126,7 +125,9 @@ export default function PricingPage() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-center mt-16"
           >
-            <p className="text-muted-foreground mb-6">{t.pricing.addOnsCtaText}</p>
+            <p className="text-muted-foreground mb-6">
+              {t.pricing.addOnsCtaText}
+            </p>
             <Button
               asChild
               variant="outline"
@@ -187,8 +188,6 @@ export default function PricingPage() {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }
