@@ -200,7 +200,7 @@ export default function AboutPage() {
                 {t.about.caseStudyLabel}
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-                {caseStudy.company} • {caseStudy.industry}
+                {caseStudy.company} 
               </h2>
             </div>
 
