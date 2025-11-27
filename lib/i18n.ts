@@ -528,7 +528,7 @@ export const translations = {
       closingSubtitle: "So you can focus on growth, strategy, and impact. While we handle the AI.",
       caseStudyLabel: "Case Study",
       caseStudyCompany: "Holibayt.com",
-      caseStudyDescription:
+      caseStudyQuote:
         "Beway Labs transformed our operations. We went from manually processing hundreds of leads to having AI handle everything: qualification, follow-ups, and scheduling. Our sales team focuses purely on closing deals.",
       caseStudyMetric1: "40h",
       caseStudyMetric1Label: "Saved per week",
@@ -537,7 +537,6 @@ export const translations = {
       caseStudyMetric3: "7 days",
       caseStudyMetric3Label: "To full deployment",
       caseStudyTitle: "Real results from real businesses",
-      caseStudyIndustry: "SaaS",
       metric1: "Time saved",
       metric1Value: "−40%",
       metric2: "Revenue growth",
@@ -1202,7 +1201,7 @@ export const translations = {
         "Pour que vous puissiez vous concentrer sur la croissance, la stratégie et l'impact. Pendant que nous gérons l'IA.",
       caseStudyLabel: "Étude de cas",
       caseStudyCompany: "Holibayt.com",
-      caseStudyDescription:
+      caseStudyQuote:
         "Beway Labs a transformé nos opérations. Nous sommes passés du traitement manuel de centaines de prospects à la prise en charge de tout par l'IA : qualification, suivis et planification. Notre équipe de vente se concentre uniquement sur la conclusion des transactions.",
       caseStudyMetric1: "40h",
       caseStudyMetric1Label: "Économisées par semaine",
@@ -1211,7 +1210,6 @@ export const translations = {
       caseStudyMetric3: "7 jours",
       caseStudyMetric3Label: "Pour un déploiement complet",
       caseStudyTitle: "Des résultats réels d'entreprises réelles",
-      caseStudyIndustry: "SaaS",
       metric1: "Temps économisé",
       metric1Value: "−40%",
       metric2: "Croissance du chiffre d'affaires",
