@@ -2,8 +2,6 @@
 
 import { motion, useScroll, useTransform } from "framer-motion"
 import { Briefcase, Headphones, DollarSign, TrendingUp, Users, Megaphone, ArrowRight } from "lucide-react"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
@@ -75,8 +73,6 @@ export default function UseCasesPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Navbar />
-
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
@@ -116,7 +112,6 @@ export default function UseCasesPage() {
                     href={`/use-cases/${useCase.slug}`}
                     className="block rounded-2xl border border-border bg-card/50 backdrop-blur-sm overflow-hidden hover:border-accent-signal/30 transition-all"
                   >
-                    {/* Image */}
                     <div className="relative h-64 overflow-hidden">
                       <Image
                         src={useCase.image || "/placeholder.svg"}
@@ -125,8 +120,6 @@ export default function UseCasesPage() {
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
-
-                      {/* KPI Badge */}
                       <div className="absolute top-4 right-4">
                         <div className="rounded-full bg-accent-neon/90 backdrop-blur-sm border border-accent-neon/20 px-4 py-2 text-sm font-bold text-primary-foreground">
                           {useCase.kpi}
@@ -134,7 +127,6 @@ export default function UseCasesPage() {
                       </div>
                     </div>
 
-                    {/* Content */}
                     <div className="p-8 space-y-4">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
@@ -157,7 +149,6 @@ export default function UseCasesPage() {
 
       {/* CTA Section */}
       <section ref={ctaRef} className="py-32 md:py-48 px-6 relative overflow-hidden bg-background">
-        {/* Cinematic gradient background with depth */}
         <div className="absolute inset-0">
           <motion.div
             style={{ scale, opacity }}
@@ -165,7 +156,6 @@ export default function UseCasesPage() {
           />
         </div>
 
-        {/* Floating particles for depth */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {[...Array(3)].map((_, i) => (
             <motion.div
@@ -198,7 +188,6 @@ export default function UseCasesPage() {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="text-center space-y-16"
           >
-            {/* Hero title with refined typography */}
             <div className="space-y-6">
               <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-[-0.02em] leading-[1.05] text-balance text-foreground">
                 {t.useCases.ctaTitle}
@@ -208,7 +197,6 @@ export default function UseCasesPage() {
               </p>
             </div>
 
-            {/* CTA button with premium interaction */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -217,7 +205,6 @@ export default function UseCasesPage() {
               className="pt-4"
             >
               <div className="relative inline-block group">
-                {/* Glow effect on hover */}
                 <div className="absolute -inset-2 bg-gradient-to-r from-accent-signal/50 via-accent-neon/50 to-accent-signal/50 rounded-full blur-xl opacity-0 group-hover:opacity-70 transition-opacity duration-700" />
 
                 <Button
@@ -233,7 +220,6 @@ export default function UseCasesPage() {
               </div>
             </motion.div>
 
-            {/* Trust disclaimer text only */}
             <div className="pt-12">
               <p className="text-sm text-muted-foreground/60 font-light max-w-2xl mx-auto leading-relaxed">
                 {t.useCases.ctaDisclaimer}
@@ -242,8 +228,6 @@ export default function UseCasesPage() {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }
